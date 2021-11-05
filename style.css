@@ -13,13 +13,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     min-height: 800px;
     background-color: rgba(93, 169, 255, 0.247);
 }
 .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    background-color: darkturquoise;
+    padding: 2em;
+}
+.form input, label{
+    font-size: 1.2em;
 }
 
 .menu{

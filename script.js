@@ -17,14 +17,15 @@ function readerJSON(){
         const json = JSON.parse(text);
         title.textContent = json.name;
         // Добавление формы с импутами
-        for(let i=0; i <= json.fields.length; i++){
+        for(let i=0; i <= Number(json.fields.length)+1; i++){
             let el = document.createElement("label");
             let el2 = document.createElement("input");
     
             el.textContent = json.fields[i].label;
             el2.type = json.fields[i].input.type;
-            el2.required = json.fields[i].input.required;
-    
+            if(!json.fields[i].input.required){
+                el2.required = json.fields[i].input.required;
+            }
             form.appendChild(el);
             form.appendChild(el2);
         }
