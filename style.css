@@ -22,7 +22,7 @@
     grid-template-columns: 1fr;
     grid-gap: 1em;
     background-color: darkturquoise;
-    padding: 2em;
+    margin-bottom: 5em;;
 }
 .form input, label{
     font-size: 1.2em;
